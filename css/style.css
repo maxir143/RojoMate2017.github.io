@@ -1,3 +1,8 @@
+*{
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+}
 .section{
     overflow: hidden;
     background-color: #fff;
@@ -5,10 +10,9 @@
 /* Todos */
 #BackImage {
     position: absolute;
-    width: 80%;
-
-    -webkit-transform: translate(10vw, -50vh);
-    transform: translate(10vw, -50vh);
+    width: 100%;
+    -webkit-transform: translate(0, -50vh);
+    transform: translate(0, -50vh);
 }
 
 .BackStripe{
@@ -21,6 +25,35 @@
     z-index: 0;
 }
 /* Div 1 */
+.TopMenu{
+    position: absolute;
+    background-color: rgb(33,41,82);
+
+    width: 100vw;
+    height: 25vh;
+    transform: translate(0, -50vh);
+}
+.MainLogo{
+
+}
+.MainNav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    text-align: right;
+}
+.NavPage{
+    color: #fff;
+}
+.NavPage a{
+    color: #505050;
+    margin-right: 10px;
+    display: none;
+}
+.NavPage:hover , .NavPage a{
+    display: inline-block;
+}
 
 /* Div 2 */
 

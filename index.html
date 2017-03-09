@@ -5,13 +5,20 @@
         <title>RojoMate Studio</title>
     </head>
     <body>
+        <ul class="MainNav">
+            <li class="NavPage"><a href="#Menu">Menu</a>&#9679</li>
+            <li class="NavPage"><a href="#Rojo">Rojo</a>&#9679</li>
+            <li class="NavPage"><a href="#Branding">Branding</a>&#9679</li>
+            <li class="NavPage"><a href="#BrandImage">BrandImage</a>&#9679</li>
+            <li class="NavPage"><a href="#BrandComunication">BrandComunication</a>&#9679</li>
+            <li class="NavPage"><a href="#SocialMedia">SocialMedia</a>&#9679</li>
+        </ul>
         <div id="fullpage">
             <!--     Div 1    -->
             <div class="section">
                 <img src="images/Front_no_text.jpg" id="BackImage" alt="">
-                <div class="FrontText">
-
-                </div>
+                <div class="TopMenu"></div>
+                <img src="images/Logo" class="MainLogo" alt="LogoRojoMate">
             </div>
             <!--     Div 2    -->
             <div class="section">
@@ -76,8 +83,11 @@
             var scene = document.getElementById('fullpage');
             var parallax = new Parallax(scene, {
             });
-            $('#fullpage').fullpage();
+            $('#fullpage').fullpage({
+                anchors: ['Menu','Rojo', 'Branding', 'BrandImage', 'BrandComunication','SocialMedia'],
+                menu: '#MenuNav'
             });
+        });
         </script>
     </footer>
 </html>
