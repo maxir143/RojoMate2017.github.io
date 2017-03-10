@@ -52,13 +52,11 @@
 .NavPage a{
     color: #D5DCE4;
     margin-right: 10px;
-    display: none;
 
 }
-.NavPage:hover , .NavPage a{
-    display: inline-block;
+.NavPage a:hover{
+    font-size: 1.1em;
 }
-
 
 /* Div 1 */
 .TopMenu{
@@ -82,6 +80,21 @@
 
 
 /* Div 2 */
+.LOGO2{
+    position: absolute;
+    width: 15vw;
+    top: 10vh;
+    left: 10vh;
+}
+.TitleText{
+    text-align: justify;
+    font-size: 2em;
+    color: #2D3A4B;
+    position: absolute;
+    width: 50vw;
+    top: 10vh;
+    left: 50vw;
+}
 
 /* Div 3 */
 .TitleImage_3{
@@ -212,5 +225,8 @@
 @media screen and (min-width: 1500px) {
     .MainNav{
         font-size: 2em;
+    }
+    .TitleText{
+        font-size: 3em;
     }
 }
