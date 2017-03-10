@@ -2,11 +2,19 @@
     margin: 0px;
     text-decoration: none;
     list-style: none;
+    font-family: 'Abel', sans-serif;
 }
+
 .section{
     overflow: hidden;
-    background-color: #fff;
+    background-color: #D5DCE4;
 }
+.Shadow{
+    -webkit-box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.75);
+}
+
 /* Todos */
 #BackImage {
     position: absolute;
@@ -18,42 +26,60 @@
 .BackStripe{
     position: absolute;
     text-align: center;
-    background: #2f3b4f;
+    background: #2D3A4B;
     width: 50vw;
     margin-left: 25vw;
     height: 100vh;
     z-index: 0;
 }
-/* Div 1 */
-.TopMenu{
-    position: absolute;
-    background-color: rgb(33,41,82);
 
-    width: 100vw;
-    height: 25vh;
-    transform: translate(0, -50vh);
-}
-.MainLogo{
 
-}
+/*Nav*/
 .MainNav{
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    text-align: right;
+    position:absolute;
+    height: 35vh;
+    text-align: left;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(70vw, -45vh);
+    z-index: 100;
 }
 .NavPage{
-    color: #fff;
+
 }
 .NavPage a{
-    color: #505050;
+    color: #D5DCE4;
     margin-right: 10px;
     display: none;
+
 }
 .NavPage:hover , .NavPage a{
     display: inline-block;
 }
+
+
+/* Div 1 */
+.TopMenu{
+    position: absolute;
+    background-color: #2D3A4B;
+
+    width: 100vw;
+    height: 45vh;
+    transform: translate(0, -50vh);
+}
+.MainLogo{
+    position: absolute;
+    width: 35vh;
+    transform: translate(10vw, -45vh);
+}
+.BackImage1{
+    position: absolute;
+    width: 100vw;
+    transform: translate(0, -5vh);
+}
+
 
 /* Div 2 */
 
@@ -64,9 +90,6 @@
     margin-left: 15vw;
     margin-top: 20vh;
     z-index: 150;
-    -webkit-box-shadow: 0px 14px 46px -8px rgba(0,0,0,0.8);
-    -moz-box-shadow: 0px 14px 46px -8px rgba(0,0,0,0.8);
-    box-shadow: 0px 14px 46px -8px rgba(0,0,0,0.8);
 }
 .SubImage_3{
     position: absolute;
@@ -74,12 +97,9 @@
     margin-left: 45vw;
     margin-top: 17vh;
     z-index: 100;
-    -webkit-box-shadow: 13px 14px 46px -8px rgba(0,0,0,0.8);
-    -moz-box-shadow: 13px 14px 46px -8px rgba(0,0,0,0.8);
-    box-shadow: 13px 14px 46px -8px rgba(0,0,0,0.8);
 }
 .BackShadow_3{
-    background: #829928;
+    background: #B9CB39;
     position: absolute;
     margin-left: 20vw;
     margin-top: 25vh;
@@ -96,9 +116,6 @@
     margin-left: 20vw;
     margin-top: 35vh;
     z-index: 150;
-    -webkit-box-shadow: 0px 14px 46px -8px rgba(0,0,0,0.8);
-    -moz-box-shadow: 0px 14px 46px -8px rgba(0,0,0,0.8);
-    box-shadow: 0px 14px 46px -8px rgba(0,0,0,0.8);
 }
 .SubImage_4{
     position: absolute;
@@ -106,12 +123,9 @@
     margin-left: 30vw;
     margin-top: 25vh;
     z-index: 100;
-    -webkit-box-shadow: 13px 14px 46px -8px rgba(0,0,0,0.8);
-    -moz-box-shadow: 13px 14px 46px -8px rgba(0,0,0,0.8);
-    box-shadow: 13px 14px 46px -8px rgba(0,0,0,0.8);
 }
 .BackShadow_4{
-    background: #5F4E9E;
+    background: #3B3B89;
     position: absolute;
     margin-left: 17vw;
     margin-top: 15vh;
@@ -127,22 +141,18 @@
     margin-left: 15vw;
     margin-top: 20vh;
     z-index: 150;
-    -webkit-box-shadow: 0px 14px 46px -8px rgba(0,0,0,0.8);
-    -moz-box-shadow: 0px 14px 46px -8px rgba(0,0,0,0.8);
-    box-shadow: 0px 14px 46px -8px rgba(0,0,0,0.8);
 }
+
 .SubImage_5{
     position: absolute;
     width: 30vw;
     margin-left: 45vw;
     margin-top: 17vh;
     z-index: 100;
-    -webkit-box-shadow: 13px 14px 46px -8px rgba(0,0,0,0.8);
-    -moz-box-shadow: 13px 14px 46px -8px rgba(0,0,0,0.8);
-    box-shadow: 13px 14px 46px -8px rgba(0,0,0,0.8);
 }
+
 .BackShadow_5{
-    background: #B80257;
+    background: #D10B4D;
     position: absolute;
     margin-left: 20vw;
     margin-top: 25vh;
@@ -153,25 +163,54 @@
 /* Div 6*/
 .BackStripeEnd{
     position: absolute;
-    text-align: center;
-    background: #2f3b4f;
+    background: #2D3A4B;
     width: 50vw;
     margin-left: 25vw;
     height: 50vh;
-    z-index: 0;
+    top: 0px;
+
 }
 
-.BackShadow_6{
-    background: #5A92AF;
+.BackRectangle{
     position: absolute;
-    text-align: center;
-    width: 40vw;
-    margin-left: 10vw;
-    height: 15vh;
-    margin-top: 40vh;
+    top: 30vh;
+    width: 100vw;
+    height: 70vh;
+    background: #2D3A4B;
 }
-.RojoEnd{
+.FootLogo{
+    top: 0;
+    width: 10vw;
+    transform: translate(45vw, -20vh);
+}
+
+.SocialMedia{
+    position:absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20vw;
+    font-size: 5em;
+    transform: translate(40vw, -10vh);
+    z-index: 100;
+    color: #fff;
     text-align: center;
-    position: absolute;
-    transform: translate(50vw, 20vh);
+}
+.Info{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20vw;
+    font-size: 1em;
+    transform: translate(40vw, 10vh);
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+}
+
+@media screen and (min-width: 1500px) {
+    .MainNav{
+        font-size: 2em;
+    }
 }
