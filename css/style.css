@@ -16,12 +16,6 @@
 }
 
 /* Todos */
-#BackImage {
-    position: absolute;
-    width: 100%;
-    -webkit-transform: translate(0, -50vh);
-    transform: translate(0, -50vh);
-}
 
 .BackStripe{
     position: absolute;
@@ -80,20 +74,26 @@
 
 
 /* Div 2 */
+.BackImage2 {
+    position: absolute;
+    width: 100%;
+    -webkit-transform: translate(0, -62vh);
+    transform: translate(0, -62vh);
+}
 .LOGO2{
     position: absolute;
     width: 15vw;
-    top: 10vh;
-    left: 10vh;
+    top: 5vh;
+    left: 25vh;
 }
 .TitleText{
     text-align: justify;
-    font-size: 2em;
+    font-size: 1.5em;
     color: #2D3A4B;
     position: absolute;
     width: 50vw;
     top: 10vh;
-    left: 50vw;
+    left: 55vw;
 }
 
 /* Div 3 */
@@ -126,7 +126,7 @@
 .TitleImage_4{
     position: absolute;
     width: 30vw;
-    margin-left: 20vw;
+    margin-left: 15vw;
     margin-top: 35vh;
     z-index: 150;
 }
@@ -203,7 +203,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 20vw;
-    font-size: 5em;
+    font-size: 3em;
     transform: translate(40vw, -10vh);
     z-index: 100;
     color: #fff;
@@ -214,9 +214,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 20vw;
-    font-size: 1em;
-    transform: translate(40vw, 10vh);
+    width: 22vw;
+    font-size: 1.2em;
+    transform: translate(39vw, 0vh);
     z-index: 100;
     color: #fff;
     text-align: center;
@@ -227,6 +227,6 @@
         font-size: 2em;
     }
     .TitleText{
-        font-size: 3em;
+        font-size: 2em;
     }
 }
