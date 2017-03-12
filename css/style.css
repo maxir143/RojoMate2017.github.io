@@ -209,6 +209,15 @@
     color: #fff;
     text-align: center;
 }
+.SocialMedia a{
+    color: #fff;
+}
+.RojoEnd a{
+    color: #fff;
+}
+.RojoEnd a:hover{
+    color: #8b8b8b;
+}
 .Info{
     position:absolute;
     display: flex;
