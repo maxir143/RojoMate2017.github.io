@@ -38,10 +38,12 @@
                     <div class="BackStripe layer " data-depth="0.00" > </div>
                     <div class="BackShadow_3 layer" data-depth="0.40"> </div>
                     <img src="images/TituloBranding.jpg" class="TitleImage_3 layer Shadow" data-depth="0.30" alt="">
-                    <img src="images/Branding_1.jpg" class="SubImage_3 layer Shadow" data-depth="0.20" alt="">
-                </div>
-                <div class="slide">
-
+                    <div id="slide_1" class="SubImage_3 layer Shadow" data-depth="0.20" >
+                        <img src="images/Seccion3_A.png" class="" alt="">
+                        <img src="images/Seccion3_B.png" class="" alt="">
+                        <img src="images/Seccion3_C.png" class="" alt="">
+                        <img src="images/Seccion3_D.png" class="" alt="">
+                    </div>
                 </div>
             </div>
             <!--     Div 4    -->
@@ -52,9 +54,6 @@
                     <img src="images/Tituloimage.jpg" class="TitleImage_4 layer Shadow" data-depth="0.30" alt="">
                     <img src="images/Brandimagen_1.jpg" class="SubImage_4 layer Shadow" data-depth="0.20"  alt="">
                 </div>
-                <div class="slide">
-
-                </div>
             </div>
             <!--     Div 5      -->
             <div class="section">
@@ -63,9 +62,6 @@
                     <div class="BackShadow_5 layer" data-depth="0.40"> </div>
                     <img src="images/Titulocommunication.jpg" class="TitleImage_5 layer Shadow" data-depth="0.30"  alt="">
                     <img src="images/Brandcommunication_1.jpg" class="SubImage_5 layer Shadow" data-depth="0.20"  alt="">
-                </div>
-                <div class="slide">
-
                 </div>
             </div>
             <!--     Div 6      -->
@@ -96,11 +92,41 @@
     <footer>
         <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
-        <script type="text/javascript" src="js/jquery.min.js"></script>
+         <script src="http://code.jquery.com/jquery-latest.min.js"></script>
         <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
         <script type="text/javascript" src="js/parallax.min.js"></script>
+        <script type="text/javascript" src="js/jquery.slides.js"></script>
         <script type="text/javascript">
         $(document).ready(function() {
+            $("#slide_1").slidesjs({
+                width: 408,
+                height: 408,
+                navigation: {
+                    active: false,
+                    effect: "slide"
+                },
+                pagination: {
+                 active: false,
+                 effect: "slide"
+             },
+                play: {
+                active: false,
+                    // [boolean] Generate the play and stop buttons.
+                    // You cannot use your own buttons. Sorry.
+                    effect: "slide",
+                    // [string] Can be either "slide" or "fade".
+                    interval: 2000,
+                    // [number] Time spent on each slide in milliseconds.
+                    auto: true,
+                    // [boolean] Start playing the slideshow on load.
+                    swap: true,
+                    // [boolean] show/hide stop and play buttons
+                    pauseOnHover: false,
+                    // [boolean] pause a playing slideshow on hover
+                    restartDelay: 2500
+                    // [number] restart delay on inactive slideshow
+                }
+              });
             var scene = document.getElementById('fullpage');
             var parallax = new Parallax(scene, {
             });
