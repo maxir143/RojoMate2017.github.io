@@ -9,8 +9,8 @@ $(document).ready(function() {
 
     //slides 1
     $("#slide_1").slidesjs({
-        width: 408,
-        height: 408,
+        width: 960,
+        height: 611,
         navigation: {
             active: false,
             effect: "slide"

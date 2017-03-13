@@ -106,9 +106,9 @@
 }
 .SubImage_3{
     position: absolute;
-    width: 30vw;
-    margin-left: 45vw;
-    margin-top: 17vh;
+    width: 50vw;
+    margin-left: 30vw;
+    margin-top: 15vh;
     z-index: 100;
 }
 .BackShadow_3{
@@ -116,8 +116,8 @@
     position: absolute;
     margin-left: 20vw;
     margin-top: 25vh;
-    width: 60vw;
-    height: 60vh;
+    width: 64vw;
+    height: 63vh;
     z-index: 50;
 }
 
@@ -140,9 +140,9 @@
 .BackShadow_4{
     background: #3B3B89;
     position: absolute;
-    margin-left: 17vw;
+    margin-left: 11vw;
     margin-top: 15vh;
-    width: 60vw;
+    width: 65vw;
     height: 60vh;
     z-index: 50;
 }
@@ -151,7 +151,7 @@
 .TitleImage_5{
     position: absolute;
     width: 30vw;
-    margin-left: 15vw;
+    margin-left: 17vw;
     margin-top: 20vh;
     z-index: 150;
 }
@@ -159,7 +159,7 @@
 .SubImage_5{
     position: absolute;
     width: 30vw;
-    margin-left: 45vw;
+    margin-left: 46vw;
     margin-top: 17vh;
     z-index: 100;
 }
@@ -168,7 +168,7 @@
     background: #D10B4D;
     position: absolute;
     margin-left: 20vw;
-    margin-top: 25vh;
+    margin-top: 27vh;
     width: 60vw;
     height: 60vh;
     z-index: 50;
@@ -186,15 +186,13 @@
 
 .BackRectangle{
     position: absolute;
-    top: 30vh;
+    top: 15vh;
     width: 100vw;
-    height: 70vh;
-    background: #2D3A4B;
 }
 .FootLogo{
     top: 0;
     width: 10vw;
-    transform: translate(45vw, -20vh);
+    transform: translate(45vw, -15vh);
 }
 
 .SocialMedia{
@@ -225,7 +223,7 @@
     justify-content: space-between;
     width: 22vw;
     font-size: 1.2em;
-    transform: translate(39vw, 0vh);
+    transform: translate(39vw, 5vh);
     z-index: 100;
     color: #fff;
     text-align: center;
@@ -237,5 +235,12 @@
     }
     .TitleText{
         font-size: 2em;
+    }
+    .SocialMedia{
+        transform: translate(40vw, -5vh);
+    }
+    .Info{
+        font-size: 1.4em;
+        transform: translate(39vw, 7vh);
     }
 }
